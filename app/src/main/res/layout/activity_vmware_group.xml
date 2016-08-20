@@ -1,12 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.soho.evgeny.troubleshootingtools.VMWareGroupActivity">
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btnVMConfigCheck"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:text="Check VM Configuration"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="5sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:onClick="startVMConfigurationCheck">
+    </Button>
+    <Button
+        android:id="@+id/btnSnapshotHunter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:text="Check zomby snapshots"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="5sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:onClick="startVMZombySnapshotsCheck">
+    </Button>
+    <Button
+        android:id="@+id/btnVWareInventoryCheck"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="Check vSphere inventory"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:onClick="startVMWareInventoryCheck">
+    </Button>
+</LinearLayout>
 
-</RelativeLayout>

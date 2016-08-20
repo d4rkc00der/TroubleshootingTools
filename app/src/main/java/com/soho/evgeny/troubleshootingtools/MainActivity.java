@@ -1,7 +1,8 @@
 package com.soho.evgeny.troubleshootingtools;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,14 +14,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startInstallGroup(View view){
-    // TODO: 21.08.16
+        Intent intent = new Intent(this,InstallationGroupActivity.class);
+        startActivity(intent);
     }
 
     public void startVMWareGroup(View view){
-    // TODO 21.08.16
+        Intent intent = new Intent(this,VMWareGroupActivity.class);
+        startActivity(intent);
     }
 
     public void startHypervGroup(View view){
-    // TODO 21.08.16
+        Intent intent = new Intent(this,HypervGroupActivity.class);
+        startActivity(intent);
     }
 }
